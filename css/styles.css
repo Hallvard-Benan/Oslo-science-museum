@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 img,
 picture,
 svg,
@@ -32,6 +36,12 @@ body {
   background-color: var(--main-background-color-dark);
   color: var(--main-text-color-light);
   margin: 0;
+  font-family: "poppins", sans-serif;
+}
+
+section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 a {
@@ -43,7 +53,7 @@ header {
   border-bottom: solid 1px var(--accent-color-150);
 }
 
-nav {
+.top-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -53,10 +63,6 @@ nav {
 
 .logo {
   max-height: 8rem;
-}
-
-section {
-  padding-top: 10rem;
 }
 
 .starry {
@@ -74,6 +80,12 @@ h1 {
   position: relative;
   font-size: 4.5vw;
   color: var(--accent-color-100);
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 2rem;
 }
 
 h1::before {
@@ -118,28 +130,41 @@ h1::before {
   margin: 1rem;
 }
 
+.cta,
+.learn-more {
+  transition: 300ms ease-in-out;
+}
+
 .cta {
   background-color: var(--accent-color-100);
   border-radius: 1em;
   padding: 0.7em 2em;
 }
+.cta:hover {
+  background: var(--accent-color-150);
+}
+
+.hero-guy:hover {
+  transform: scale(0.92);
+}
 
 .learn-more {
   padding: 0.7em;
+}
+.learn-more:hover {
+  border-radius: 1rem;
 }
 
 .card-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1600px;
-  align-items: center;
+  max-width: 1550px;
   justify-content: center;
 }
 
@@ -147,6 +172,7 @@ h1::before {
   background-size: cover;
   background-position: center;
   width: 45ch;
+  max-width: 90vw;
   overflow: hidden;
   border: solid var(--main-text-color-light) 0.1em;
   border-radius: 5%;
@@ -156,7 +182,6 @@ h1::before {
   align-items: center;
   margin: 1rem;
   flex-grow: 0;
-  max-width: 90vw;
 }
 
 .card:hover,
@@ -167,7 +192,7 @@ h1::before {
 }
 
 .card-content {
-  padding: 1.6em 1.6em 2em 1.6em;
+  padding: 1.6em 0em 2em 1.6em;
   background: linear-gradient(
     hsl(0 0% 0% / 0),
     hsl(0 0% 0% / 0.8) 15%,
@@ -226,4 +251,37 @@ h1::before {
 .card-kids {
   background-image: url(/assets/reading-2762010_1280_11zon.jpg);
   background-position: 50% 30%;
+}
+
+.new-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.new-image {
+  display: flex;
+  flex-direction: row;
+}
+
+.new-image img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  max-width: 50%;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.new {
+  width: 85%;
+  max-width: 1550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text p {
+  text-align: start;
+  max-width: 80ch;
 }

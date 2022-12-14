@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Square Eyes, video platform for film-lovers, by film lovers"
+      content="Oslo community science museum is the best place to explore, discover and experience some of humanities most important and incredible scientific discoveries in an entertaining way. "
     />
     <title>Oslo community science museum | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+    <script src="https://kit.fontawesome.com/c4e13e4f8b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="starry"><header>
-      <nav>
+      <nav class="top-nav">
         <a href="index.html"><img src="/assets/logo2.png" alt="oslo community science museum logo" class="logo"></a>
         <a href="visit.html">Visit</a>
         <a href="exhibit.">Our exhibit</a>
@@ -36,6 +42,7 @@
       </div>
       <section class="card-section">
         <h2>Our exhibits:</h2>
+        <!-- Card effect inspired by youtube chanel: Kevin Powel video:https://www.youtube.com/watch?v=5DEq5cWNYt8 -->
         <div class="card-container">
           <div class="card card-vr">
             <a href="#">
@@ -94,19 +101,52 @@
             </a>
           </div>
       </section>
-      <section class="new-section card-section">
+      <section class="new-section">
         <h2>Whats new:</h2>
-            <div>
-                <div class="card card-robotics">
-                    <a href="#">
-                      <div class="card-content">
-                        <h3 class="card-title">Robotics</h3>
-                        <p>How robotics shape the future</p>
-                        <a href="#" class="card-button">About exhibit</a>
-                      </div>
-            </div>
-            </div>
+        <div class="new">
+                <div class="text new-text">
+                    <h3>New robotics exhibit</h3>
+                    <p>Robotics, automation and AI are changing the world we live in at a blistering pace. In our newest exhibit you can experience how this is effecting everything in our scociety from accessibility and automation, to lifelike AI.</p>
+                </div>
+                <div class="image new-image">
+                    <img src="/assets/Free Berlin Image on Unsplash_11zon.jpg" alt="a robot arm performing automated tasks in a display">
+                    <img src="/assets/prostheticarm.jpeg" alt="man in wheelchair holding out prosthetic arm">
+                </div>
+        </div>
       </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer-logo"><img src="/assets/logo.png" alt="oslo science museum log with slogan"></div>
+            <div class="footer-nav">
+                <nav class="bottom">
+                <a href="visit.html">Book a tour</a>
+                <a href="#">Opening hours</a>
+                <a href="#">prices</a>
+                <a href="exhibit.">Our exhibit</a>
+                <a href="#">Facilities</a>
+                <a href="#">Accessibility</a>
+                <a href="#">About us</a>
+            </nav>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact us</h3>
+            <a href="contact.html">Contact form</a>
+            <p>tel: +47 90099000 </p>
+            <p>email: mail@oslo.sciencemuseum</p>
+            <a href="facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+
+        </div>
+        <div class="footer-news">
+            <h3>Sign up for our newsletter</h3>
+            <form action="form-sucsess.php" method="get">
+                <label for="mail">Email:</label>
+                <input type="text" name="mail"  id="mail" placeholder="example@email.com">
+                <input type="submit" name="submit" id="submit" value="Sign up">
+            </form>
+        </div>  
+        </div>
+    </footer>
   </body>
 </html>
