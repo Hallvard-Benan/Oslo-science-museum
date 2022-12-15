@@ -24,16 +24,17 @@ select {
 }
 
 :root {
-  --main-background-color-dark: #020110;
+  --color-background-200: #020110;
+  --color-background-100: hsl(244, 88%, 1%);
   --main-text-color-light: #ffffff;
   --accent-color-100: #a226b2;
   --accent-color-150: hsl(293, 65%, 80%);
   --accent-color-2: #0b6e56;
-  --text-size-100: 2rem;
+  --text-size-100: 1.6rem;
 }
 
 body {
-  background-color: var(--main-background-color-dark);
+  background-color: var(--color-background-200);
   color: var(--main-text-color-light);
   margin: 0;
   font-family: "poppins", sans-serif;
@@ -42,6 +43,10 @@ body {
 section {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.active {
+  color: var(--accent-color-100);
 }
 
 a {
@@ -76,11 +81,10 @@ header {
   align-items: center;
 }
 
-h1 {
+.animated-text {
   position: relative;
   font-size: 4.5vw;
   color: var(--accent-color-100);
-  font-family: "Comfortaa", cursive;
   text-transform: uppercase;
 }
 
@@ -88,7 +92,7 @@ p {
   line-height: 2rem;
 }
 
-h1::before {
+.hero-section h1::before {
   content: attr(data-text);
   position: absolute;
   color: var(--main-text-color-light);
@@ -284,4 +288,137 @@ h1::before {
 .text p {
   text-align: start;
   max-width: 80ch;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  border: 2px solid white;
+  width: 85vw;
+  margin: auto;
+  flex-wrap: wrap;
+  border-radius: 15rem;
+  background-color: #0b6e56;
+}
+
+.info-container > * {
+  padding: 2rem;
+  text-align: center;
+}
+
+.map {
+  border-radius: 2rem;
+  max-width: 90%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+
+.footer-container > * {
+  justify-content: space-evenly;
+}
+
+footer {
+  background-color: var(--color-background-100);
+  padding: 2rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-container a {
+  color: var(--accent-color-150);
+}
+
+.glass-section {
+  background-image: url(/assets/scott-webb-102825-min-min_11zon.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.glass-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.glass-card {
+  margin: 0 2rem 2rem 2rem;
+  padding: 1rem 0 2rem 0;
+  border: 2px solid white;
+  border-radius: 1.3rem;
+  text-align: center;
+  width: 40ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.83);
+}
+
+.page-title {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: var(--text-size-100);
+}
+
+.price-row {
+  display: flex;
+  border-bottom: 1px solid white;
+  max-width: 50%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.button {
+  border: 1px solid white;
+  border-radius: 5rem;
+  padding: 0.4em 1.5em;
+  font-weight: 600;
+  transition: 300ms ease;
+}
+
+.button:hover {
+  background-color: var(--main-text-color-light);
+  color: var(--accent-color-100);
+  tr;
+}
+
+.section-features {
+  background-color: var(--accent-color-100);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 5rem;
+}
+.feature {
+  max-width: 30rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about {
+  background-color: var(--accent-color-2);
+}
+
+.full-text {
+  width: 75ch;
+  max-width: 85%;
+  margin: auto;
 }
