@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Oslo community science museum is the best place to explore, discover and experience some of humanities most important and incredible scientific discoveries in an entertaining way. "
+    />
+    <title>Oslo community science museum | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/c4e13e4f8b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="starry">
+      <header>
+        <nav class="top-nav">
+          <a href="index.html"
+            ><img
+              src="/assets/logo2.png"
+              alt="oslo community science museum logo"
+              class="logo"
+          /></a>
+          <a href="visit.html">Visit</a>
+          <a href="exhibit.html">Our exhibit</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <section class="page-title-section">
+        <div class="page-title">
+          <h1 class="title">Contact us</h1>
+          <p>
+            Want to book a group tour? Any questions or concerns? Fill out the
+            contact form below, and we will get to your inquiry as soon as we
+            can.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <form action="submit.php" method="POST" class="contact_form">
+            <div class="email">
+              <label for="email" class="label_email">*E-mail:</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="exaple@email.com   "
+                required
+                class="contact_email"
+              />
+            </div>
+            <div class="name">
+              <label for="name" class="label_name">*Name:</label>
+              <input type="text" name="name" class="contact_name" required />
+            </div>
+            <div>
+              <label for="people">Number of people in group:</label>
+              <input type="number" name="people" id="people" />
+            </div>
+
+            <input
+              type="text"
+              name="message"
+              placeholder="Your message"
+              required
+              class="contact_message"
+            />
+            <input type="submit" class="contact_submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="/assets/logo.png"
+            alt="oslo science museum log with slogan"
+          />
+        </div>
+        <div class="footer-nav">
+          <a href="visit.html">Book a tour</a>
+          <a href="#">Opening hours</a>
+          <a href="#">Prices</a>
+          <a href="exhibit.html">Our exhibit</a>
+          <a href="#">Facilities</a>
+          <a href="#">Accessibility</a>
+          <a href="#">About us</a>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact us</h3>
+          <a href="contact.html">Contact form</a>
+          <p>tel: +47 90099000</p>
+          <p>email: mail@oslo.sciencemuseum</p>
+          <a href="facebook.com"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+        <div class="footer-news">
+          <h3>Sign up for our newsletter</h3>
+          <form action="form-sucsess.php" method="get">
+            <label for="mail">Email:</label>
+            <input
+              type="text"
+              name="mail"
+              id="mail"
+              placeholder="example@email.com"
+            />
+            <input type="submit" name="submit" id="submit" value="Sign up" />
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

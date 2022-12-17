@@ -46,7 +46,7 @@ section {
 }
 
 .active {
-  color: var(--accent-color-100);
+  color: var(--accent-color-150);
 }
 
 a {
@@ -115,6 +115,10 @@ p {
   100% {
     width: 100%;
   }
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
 
 .cta-section {
@@ -394,7 +398,6 @@ h3 {
 .button:hover {
   background-color: var(--main-text-color-light);
   color: var(--accent-color-100);
-  tr;
 }
 
 .section-features {
@@ -421,4 +424,47 @@ h3 {
   width: 75ch;
   max-width: 85%;
   margin: auto;
+}
+
+.split-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reverse-wrap {
+  flex-wrap: wrap-reverse;
+}
+
+.split-container div {
+  width: 45vw;
+  min-width: 440px;
+  padding: 1rem;
+}
+
+.vr-section {
+  background-color: #361e39;
+}
+
+.biology-section {
+  background-color: hsl(165, 82%, 10%);
+}
+
+.robotics-section {
+  background-color: #a226b2;
+}
+
+.for-kids-section {
+  background-color: orange;
+}
+
+.exhibit-image {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center;
+}
+
+.exhibit-image img {
+  border-radius: 1rem;
+  max-height: 100%;
 }
