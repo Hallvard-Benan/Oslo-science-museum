@@ -72,14 +72,14 @@ p {
 
 header {
   border-bottom: solid 1px var(--accent-color-150);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
 .top-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: var(--text-size-100);
-  align-items: center;
+  display: none;
 }
 
 .logo {
@@ -116,9 +116,19 @@ nav,
 }
 
 @media (min-width: 1025px) {
-  .hamburger-icon {
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: var(--text-size-100);
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .checkbox {
     display: none;
   }
+
   .hero-buttons:hover {
     margin: 0 -44rem;
   }
@@ -134,7 +144,7 @@ nav,
 
   .animated-text {
     position: relative;
-    font-size: 5vw;
+    font-size: 3.5vw;
     color: var(--accent-color-100);
     text-transform: uppercase;
   }
@@ -150,18 +160,16 @@ nav,
   }
 }
 
-@media (max-width: 1024px) {
-  .hero-guy {
-    display: none;
-  }
+.hero-guy {
+  display: none;
+}
 
-  section {
-    padding: 3rem 0;
-  }
+section {
+  padding: 3rem 0;
+}
 
-  .btn {
-    font-size: var(--text-size-50);
-  }
+.btn {
+  font-size: var(--text-size-50);
 }
 
 .hero-guy {
@@ -170,6 +178,34 @@ nav,
 
 .btn {
   font-size: var(--text-size-50);
+}
+
+@media (max-width: 1024px) {
+  #menu-checkbox:checked ~ .top-nav {
+    background-color: var(--color-background-200);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: var(--text-size-100);
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    z-index: 100;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .top-nav {
+    position: absolute;
+    left: 30vw;
+    top: 6rem;
+  }
+
+  .logo {
+    width: 8rem;
+  }
 }
 
 @keyframes animate {
@@ -343,7 +379,7 @@ nav,
 .new-image img {
   aspect-ratio: 16/9;
   object-fit: cover;
-  width: 50%;
+  width: 80%;
   margin: auto;
   border-radius: 1rem;
 }
@@ -358,7 +394,7 @@ nav,
   display: flex;
   justify-content: center;
   margin: auto;
-  padding: 1rem;
+  padding: 3rem 0;
   border-radius: 1.3rem;
 }
 
@@ -456,9 +492,16 @@ footer {
   text-align: center;
 }
 
+h1,
+h2 {
+  font-family: "Michroma", sans-serif;
+  text-align: center;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
+  filter: drop-shadow(0 0 0.3em #fff);
 }
 
 h3 {
@@ -498,6 +541,10 @@ h3 {
   margin: 0 5rem;
   gap: 1rem;
 }
+
+.features-container {
+  margin: 0;
+}
 .feature {
   max-width: 30rem;
   align-items: center;
@@ -526,7 +573,7 @@ h3 {
 
 .split-container div {
   width: 45vw;
-  min-width: 440px;
+  min-width: 300px;
   padding: 1rem;
 }
 
