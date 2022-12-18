@@ -44,21 +44,16 @@
         </nav>
       </header>
     </div>
-    <main>
-      <section class="page-title-section">
+    <main class="contact-page">
+      <section class="page-title-section starry">
         <div class="page-title">
           <h1 class="title">Contact us</h1>
-          <p>
-            Want to book a group tour? Any questions or concerns? Fill out the
-            contact form below, and we will get to your inquiry as soon as we
-            can.
-          </p>
         </div>
       </section>
-      <section>
-        <div>
-          <form action="submit.php" method="POST" class="contact_form">
-            <div class="email">
+      <section class="form-section">
+        <!-- <div class="container"> -->
+          <form action="submit.php" method="POST" class="contact-form">
+            <div class="email contact-row">
               <label for="email" class="label_email">*E-mail:</label>
               <input
                 type="email"
@@ -68,68 +63,68 @@
                 class="contact_email"
               />
             </div>
-            <div class="name">
+            <div class="name contact-row">
               <label for="name" class="label_name">*Name:</label>
               <input type="text" name="name" class="contact_name" required />
             </div>
-            <div>
-              <label for="people">Number of people in group:</label>
-              <input type="number" name="people" id="people" />
+            <div class="contact-row number-row">
+              <label for="people" class="number-label">Number of people in group:</label>
+              <input type="number" name="people" id="people" class="number"/>
             </div>
 
-            <input
-              type="text"
-              name="message"
-              placeholder="Your message"
-              required
-              class="contact_message"
-            />
-            <input type="submit" class="contact_submit" />
+            <div class="contact-row">
+              <input
+                type="text"
+                name="message"
+                placeholder="Your message"
+                required
+                class="contact-message"
+              />
+            </div>
+            <div class="contact-row">
+              <input type="submit" class="contact-submit" />
+            </div>
+            <p>*Required</p>
           </form>
         </div>
       </section>
+      <section>
+        <div class="back-to-top">
+            <a href="#"><img src="/assets/Spaceship 1.png" alt=""></a>
+        <a href="#" class="button">Back to top</a>
+    </div>
+      </section>
     </main>
     <footer>
-      <div class="footer-container">
-        <div class="footer-logo">
-          <img
-            src="/assets/logo.png"
-            alt="oslo science museum log with slogan"
-          />
-        </div>
-        <div class="footer-nav">
-          <a href="visit.html">Book a tour</a>
-          <a href="#">Opening hours</a>
-          <a href="#">Prices</a>
-          <a href="exhibit.html">Our exhibit</a>
-          <a href="#">Facilities</a>
-          <a href="#">Accessibility</a>
-          <a href="#">About us</a>
-        </div>
+        <div class="footer-container">
+            <div class="footer-logo"><img src="/assets/logo.png" alt="oslo science museum log with slogan"></div>
+                <div class="footer-nav">
+                <a href="contact.html">Book a tour</a>
+                <a href="visit.html#hours">Opening hours</a>
+                <a href="visit.html#price">Prices</a>
+                <a href="exhibit.html">Our exhibit</a>
+                <a href="visit.html#facilities">Facilities</a>
+                <a href="visit.html#accessibility">Accessibility</a>
+                <a href="visit.html#about-us">About us</a>
+            </div>
         <div class="footer-contact">
-          <h3>Contact us</h3>
-          <a href="contact.html">Contact form</a>
-          <p>tel: +47 90099000</p>
-          <p>email: mail@oslo.sciencemuseum</p>
-          <a href="facebook.com"
-            ><i class="fa-brands fa-square-facebook"></i
-          ></a>
-          <a href="twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+            <h3>Contact us</h3>
+            <a href="contact.html">Contact form</a>
+            <p>tel: +47 90099000 </p>
+            <p>email: mail@oslo.sciencemuseum</p>
+            <div><a href="facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="twitter.com"><i class="fa-brands fa-square-twitter"></i></a></div>
+
         </div>
         <div class="footer-news">
-          <h3>Sign up for our newsletter</h3>
-          <form action="form-sucsess.php" method="get">
-            <label for="mail">Email:</label>
-            <input
-              type="text"
-              name="mail"
-              id="mail"
-              placeholder="example@email.com"
-            />
-            <input type="submit" name="submit" id="submit" value="Sign up" />
-          </form>
+            <h3>Sign up for our newsletter</h3>
+            <form action="form-sucsess.php" method="get">
+                <label for="mail">Email:</label>
+                <input type="text" name="mail"  id="mail" placeholder="example@email.com">
+                <input type="submit" name="submit" id="submit" value="Sign up" class="contact-submit">
+            </form>
+        </div>  
         </div>
-      </div>
     </footer>
   </body>
 </html>

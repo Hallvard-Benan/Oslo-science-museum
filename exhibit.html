@@ -45,12 +45,12 @@
       </header>
     </div>
     <main>
-      <section class="page-title-section">
+      <section class="page-title-section starry">
         <div class="page-title">
           <h1 class="title">Our exhibits:</h1>
         </div>
       </section>
-      <section class="vr-section">
+      <section class="vr-section" id="exhibit-vr">
         <div class="split-container">
           <div class="vr-text">
             <h2>Visions of the future</h2>
@@ -68,7 +68,7 @@
           </div>
         </div>
       </section>
-      <section class="astronomy-section">
+      <section class="astronomy-section" id="exhibit-astronomy">
         <div class="split-container reverse-wrap">
           <div class="exhibit-image">
             <img
@@ -86,7 +86,7 @@
           </div>
         </div>
       </section>
-      <section class="biology-section">
+      <section class="biology-section" id="exhibit-biology">
         <div class="split-container">
           <div class="biology-text">
             <h2>Biology and medicine</h2>
@@ -103,7 +103,7 @@
           </div>
         </div>
       </section>
-      <section class="ecology-section">
+      <section class="ecology-section" id="exhibit-ecology">
         <div class="split-container reverse-wrap">
           <div class="exhibit-image">
             <img
@@ -121,7 +121,7 @@
           </div>
         </div>
       </section>
-      <section class="robotics-section">
+      <section class="robotics-section" id="exhibit-robotics">
         <div class="split-container">
           <div class="robotics-text">
             <h2>Robotics</h2>
@@ -139,7 +139,7 @@
           </div>
         </div>
       </section>
-      <section class="for-kids-section">
+      <section class="for-kids-section" id="exhibit-for-kids">
         <div class="split-container reverse-wrap">
           <div class="exhibit-image">
             <img
@@ -157,6 +157,12 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="back-to-top">
+          <a href="#"><img src="/assets/Spaceship 1.png" alt="" /></a>
+          <a href="#" class="button">Back to top</a>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-container">
@@ -167,23 +173,27 @@
           />
         </div>
         <div class="footer-nav">
-          <a href="visit.html">Book a tour</a>
-          <a href="#">Opening hours</a>
-          <a href="#">Prices</a>
+          <a href="contact.html">Book a tour</a>
+          <a href="visit.html#hours">Opening hours</a>
+          <a href="visit.html#price">Prices</a>
           <a href="exhibit.html">Our exhibit</a>
-          <a href="#">Facilities</a>
-          <a href="#">Accessibility</a>
-          <a href="#">About us</a>
+          <a href="visit.html#facilities">Facilities</a>
+          <a href="visit.html#accessibility">Accessibility</a>
+          <a href="visit.html#about-us">About us</a>
         </div>
         <div class="footer-contact">
           <h3>Contact us</h3>
           <a href="contact.html">Contact form</a>
           <p>tel: +47 90099000</p>
           <p>email: mail@oslo.sciencemuseum</p>
-          <a href="facebook.com"
-            ><i class="fa-brands fa-square-facebook"></i
-          ></a>
-          <a href="twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+          <div>
+            <a href="facebook.com"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="twitter.com"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+          </div>
         </div>
         <div class="footer-news">
           <h3>Sign up for our newsletter</h3>
@@ -195,7 +205,13 @@
               id="mail"
               placeholder="example@email.com"
             />
-            <input type="submit" name="submit" id="submit" value="Sign up" />
+            <input
+              type="submit"
+              name="submit"
+              id="submit"
+              value="Sign up"
+              class="contact-submit"
+            />
           </form>
         </div>
       </div>

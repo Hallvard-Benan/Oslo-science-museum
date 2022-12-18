@@ -45,7 +45,7 @@
       </header>
     </div>
     <main>
-      <section class="page-title-section">
+      <section class="page-title-section starry">
         <div class="page-title">
           <h1 class="title">visit us</h1>
         </div>
@@ -53,13 +53,13 @@
       <section class="glass-section">
         <div class="glass-container">
           <div class="glass-card glass1">
-            <div>
+            <div id="hours">
               <h3>Opening hours</h3>
               <p>Monday - Friday: 10-20</p>
               <p>Saturday - sunday: 10-18</p>
               <p>Tours start once every hour</p>
             </div>
-            <div>
+            <div id="price">
               <h3>Price:</h3>
               <p>general admission is free</p>
               <div class="price-list">
@@ -108,7 +108,7 @@
       </section>
       <section class="section-features">
         <div class="container">
-          <div class="feature">
+          <div class="feature" id="facilities">
             <h3>Facilities</h3>
             <p>
               In adition to our world class science exhibits, you can also find
@@ -116,7 +116,7 @@
               where you can find souveniers
             </p>
           </div>
-          <div class="feature">
+          <div class="feature" id="accessibility">
             <h3>Accessibility</h3>
             <p>
               Our museum is fully wheelchair accsesble, and our tours are able
@@ -127,7 +127,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about-us">
         <div class="container full-text">
           <h3>About us</h3>
           <p>
@@ -148,6 +148,12 @@
           </p>
         </div>
       </section>
+      <section>
+        <div class="back-to-top">
+          <a href="#"><img src="/assets/Spaceship 1.png" alt="" /></a>
+          <a href="#" class="button">Back to top</a>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-container">
@@ -158,23 +164,27 @@
           />
         </div>
         <div class="footer-nav">
-          <a href="visit.html">Book a tour</a>
-          <a href="#">Opening hours</a>
-          <a href="#">Prices</a>
+          <a href="contact.html">Book a tour</a>
+          <a href="visit.html#hours">Opening hours</a>
+          <a href="visit.html#price">Prices</a>
           <a href="exhibit.html">Our exhibit</a>
-          <a href="#">Facilities</a>
-          <a href="#">Accessibility</a>
-          <a href="#">About us</a>
+          <a href="visit.html#facilities">Facilities</a>
+          <a href="visit.html#accessibility">Accessibility</a>
+          <a href="visit.html#about-us">About us</a>
         </div>
         <div class="footer-contact">
           <h3>Contact us</h3>
           <a href="contact.html">Contact form</a>
           <p>tel: +47 90099000</p>
           <p>email: mail@oslo.sciencemuseum</p>
-          <a href="facebook.com"
-            ><i class="fa-brands fa-square-facebook"></i
-          ></a>
-          <a href="twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+          <div>
+            <a href="facebook.com"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="twitter.com"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+          </div>
         </div>
         <div class="footer-news">
           <h3>Sign up for our newsletter</h3>
@@ -186,7 +196,13 @@
               id="mail"
               placeholder="example@email.com"
             />
-            <input type="submit" name="submit" id="submit" value="Sign up" />
+            <input
+              type="submit"
+              name="submit"
+              id="submit"
+              value="Sign up"
+              class="contact-submit"
+            />
           </form>
         </div>
       </div>

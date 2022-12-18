@@ -23,97 +23,103 @@
   </head>
   <body>
     <div class="starry"><header>
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger-icon"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
       <nav class="top-nav">
         <a href="index.html"><img src="/assets/logo2.png" alt="oslo community science museum logo" class="logo"></a>
-        <a href="visit.html">Visit</a>
-        <a href="exhibit.html">Our exhibit</a>
-        <a href="contact.html">Contact</a>
+        <a href="visit.html" class="hidden">Visit</a>
+        <a href="exhibit.html" class="hidden">Our exhibit</a>
+        <a href="contact.html" class="hidden">Contact</a>
       </nav>
     </header>
-    <main class="main">
+    </div>
+        <main class="main">
       <section class="hero-section starry">
         <!-- Text effect inspired by youtube channel Online Toturials video: https://www.youtube.com/watch?v=4PbgtyE0mGs -->
-        <h1 data-text="Explore Discover Experience" class="animated-text animate__lightSpeedInLeft">Explore Discover Experience</h1>
-        <div class="cta-section animate__backInLeft"><img
+        <div class="header-container"></div><h1 data-text="Explore Discover Experience" class="animated-text">Explore Discover Experience</h1>
+        <div class="cta-section container"><img
           src="/assets/png123 1.png"
           alt="cartoon astronaut figure riding a rocket and giving a thumbs up" class="hero-guy"/>
-          <div class="hero-buttons">
+          <div class="hero-buttons container">
             <a href="contact.html" class="cta btn">Book a tour</a>
             <a href="visit.html" class="learn-more btn">Learn more</a>
           </div>
         </div>
       </section>
       </div>
+      </div>
       <section class="card-section">
-        <h2>Our exhibits:</h2>
+        <h2 class="section-heading">Our exhibits:</h2>
         <!-- Card effect inspired by youtube chanel: Kevin Powel video:https://www.youtube.com/watch?v=5DEq5cWNYt8 -->
         <div class="card-container">
           <div class="card card-vr">
-            <a href="#">
+            <a href="exhibit.html#exhibit-vr">
               <div class="card-content">
                 <h3 class="card-title">Visions of the future</h3>
                 <p>our vr exhibit</p>
-                <a href="#" class="card-button">About exhibit</a>
+                <a href="exhibit.html#exhibit-vr" class="card-button">About exhibit</a>
               </div>
             </a>
           </div>
           <div class="card card-space">
-            <a href="#">
+            <a href="exhibit.html#exhibit-astronomy">
               <div class="card-content">
                 <h3 class="card-title">Astronomy and space</h3>
                 <p>Explore the galaxy</p>
-                <a href="#" class="card-button">About exhibit</a>
+                <a href="exhibit.html#exhibit-astronomy" class="card-button">About exhibit</a>
               </div>
             </a>
           </div>
 
           <div class="card card-biology">
-            <a href="#">
+            <a href="exhibit.html#exhibit-biology">
               <div class="card-content">
                 <h3 class="card-title">Biology and medicine</h3>
                 <p>Explore biology</p>
-                <a href="#" class="card-button">About exhibit</a>
+                <a href="exhibit.html#exhibit-biology" class="card-button">About exhibit</a>
               </div>
             </a>
           </div>
           <div class="card card-climate">
-            <a href="#">
+            <a href="exhibit.html">
               <div class="card-content">
                 <h3 class="card-title">Enviroment and climate</h3>
                 <p>Science and technology impacting the climate</p>
-                <a href="#" class="card-button">About exhibit</a>
+                <a href="exhibit.html" class="card-button">About exhibit</a>
               </div>
             </a>
           </div>
           <div class="card card-robotics">
-            <a href="#">
+            <a href="exhibit.html">
               <div class="card-content">
                 <h3 class="card-title">Robotics</h3>
                 <p>How robotics shape the future</p>
-                <a href="#" class="card-button">About exhibit</a>
+                <a href="exhibit.html" class="card-button">About exhibit</a>
               </div>
             </a>
           </div>
           <div class="card card-kids">
-            <a href="#">
+            <a href="exhibit.html">
               <div class="card-content">
                 <h3 class="card-title">For kids</h3>
                 <p>For the youngest among us</p>
-                <a href="#" class="card-button">About exhibit</a>
+                <a href="exhibit.html" class="card-button">About exhibit</a>
               </div>
               </div>
             </a>
           </div>
       </section>
       <section class="new-section">
-        <h2>Whats new:</h2>
+        <h2 class="section-heading">Whats new:</h2>
         <div class="new">
                 <div class="text new-text">
                     <h3>New robotics exhibit</h3>
                     <p>Robotics, automation and AI are changing the world we live in at a blistering pace. In our newest exhibit you can experience how this is effecting everything in our scociety from accessibility and automation, to lifelike AI.</p>
                 </div>
                 <div class="image new-image">
-                    <img src="/assets/Free Berlin Image on Unsplash_11zon.jpg" alt="a robot arm performing automated tasks in a display">
+                    <!-- <img src="/assets/Free Berlin Image on Unsplash_11zon.jpg" alt="a robot arm performing automated tasks in a display"> -->
                     <img src="/assets/prostheticarm.jpeg" alt="man in wheelchair holding out prosthetic arm">
                 </div>
         </div>
@@ -127,28 +133,35 @@
             <div class="location"><h3>Location</h3>
             <p>Tøyengata 53</p><p>0578 Oslo</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.8949495353152!2d10.772448216464532!3d59.917290770782095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7d321ae5c194f21b!2sTidligere%20Munch-museet!5e0!3m2!1sno!2sno!4v1671105809137!5m2!1sno!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe></div>
+            <div class="info-button"> <h3>Any questions?</h3><a href="contact.html" class="button">Contact us</a></div>
         </div>
+      </section>
+      <section>
+        <div class="back-to-top">
+            <a href="#"><img src="/assets/Spaceship 1.png" alt=""></a>
+        <a href="#" class="button">Back to top</a>
+    </div>
       </section>
     </main>
     <footer>
         <div class="footer-container">
             <div class="footer-logo"><img src="/assets/logo.png" alt="oslo science museum log with slogan"></div>
                 <div class="footer-nav">
-                <a href="visit.html">Book a tour</a>
-                <a href="#">Opening hours</a>
-                <a href="#">Prices</a>
+                <a href="contact.html">Book a tour</a>
+                <a href="visit.html#hours">Opening hours</a>
+                <a href="visit.html#price">Prices</a>
                 <a href="exhibit.html">Our exhibit</a>
-                <a href="#">Facilities</a>
-                <a href="#">Accessibility</a>
-                <a href="#">About us</a>
+                <a href="visit.html#facilities">Facilities</a>
+                <a href="visit.html#accessibility">Accessibility</a>
+                <a href="visit.html#about-us">About us</a>
             </div>
         <div class="footer-contact">
             <h3>Contact us</h3>
             <a href="contact.html">Contact form</a>
             <p>tel: +47 90099000 </p>
             <p>email: mail@oslo.sciencemuseum</p>
-            <a href="facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+            <div><a href="facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="twitter.com"><i class="fa-brands fa-square-twitter"></i></a></div>
 
         </div>
         <div class="footer-news">
@@ -156,7 +169,7 @@
             <form action="form-sucsess.php" method="get">
                 <label for="mail">Email:</label>
                 <input type="text" name="mail"  id="mail" placeholder="example@email.com">
-                <input type="submit" name="submit" id="submit" value="Sign up">
+                <input type="submit" name="submit" id="submit" value="Sign up" class="contact-submit">
             </form>
         </div>  
         </div>
