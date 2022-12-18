@@ -160,10 +160,6 @@ nav,
   }
 }
 
-.hero-guy {
-  display: none;
-}
-
 section {
   padding: 3rem 0;
 }
@@ -205,6 +201,9 @@ section {
 
   .logo {
     width: 8rem;
+  }
+  .hero-guy {
+    display: none;
   }
 }
 
