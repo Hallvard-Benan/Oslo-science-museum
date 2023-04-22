@@ -76,6 +76,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  max-width: 1600px;
+  margin: auto;
 }
 
 .top-nav {
@@ -160,6 +162,14 @@ nav,
   }
 }
 
+@media (min-width: 1325px) {
+  .split-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    max-width: 1600px;
+  }
+}
+
 section {
   padding: 3rem 0;
 }
@@ -185,8 +195,11 @@ section {
     font-size: var(--text-size-100);
     align-items: center;
     gap: 1.5rem;
-    padding: 2rem;
+    padding: 3rem 2rem;
     z-index: 100;
+    border: 1px solid var(--accent-color-150);
+    border-radius: 1rem;
+    width: 90%;
   }
 
   header {
@@ -195,8 +208,13 @@ section {
 
   .top-nav {
     position: absolute;
-    left: 30vw;
+    width: 100%;
     top: 6rem;
+  }
+
+  .top-nav a {
+    border-bottom: 1px solid white;
+    padding: 1rem;
   }
 
   .logo {
@@ -279,8 +297,6 @@ section {
 }
 
 .card {
-  background-size: cover;
-  background-position: center;
   width: 45ch;
   max-width: 90vw;
   overflow: hidden;
@@ -291,7 +307,18 @@ section {
   flex-direction: column;
   align-items: center;
   margin: 1rem;
+  position: relative;
   flex-grow: 0;
+}
+
+.card-image {
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+}
+
+.vr-image {
+  top: -12rem;
 }
 
 .card:hover,
@@ -311,6 +338,8 @@ section {
   min-height: 100%;
   text-align: center;
   width: inherit;
+  z-index: 10;
+  max-width: 100%;
 }
 
 .card-title {
@@ -335,33 +364,6 @@ section {
     transform: translateY(0%);
     transition-delay: 200ms;
   }
-}
-
-.card-vr {
-  background-image: url(/assets/samuel-zeller-158996_11zon.jpg);
-}
-
-.card-space {
-  background-image: url(/assets/astronaut\ floating_11zon.jpg);
-}
-
-.card-biology {
-  background-image: url(/assets/heart-2607178_1920.jpg);
-  background-position: 55%;
-}
-
-.card-climate {
-  background-image: url(/assets/silhouette\ of\ wind\ mill\ during\ golden\ hour_11zon.jpg);
-  background-position: 40%;
-}
-
-.card-robotics {
-  background-image: url(/assets/black\ and\ white\ robot\ toy\ on\ red\ wooden\ table_11zon.jpg);
-}
-
-.card-kids {
-  background-image: url(/assets/reading-2762010_1280_11zon.jpg);
-  background-position: 50% 30%;
 }
 
 .new-section {
@@ -402,6 +404,7 @@ section {
   flex-direction: column;
   align-items: center;
   background-image: linear-gradient(to left, #0b6e56, #a226b2);
+  gap: 3rem;
 }
 
 .info-container {
@@ -538,7 +541,7 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 5rem;
+  /* margin: 0 5rem; */
   gap: 1rem;
 }
 
@@ -562,19 +565,19 @@ h3 {
 }
 
 .split-container {
-  display: flex;
-  flex-wrap: wrap;
+  padding: 1rem;
+  margin: auto;
+  display: grid;
   justify-content: center;
+  gap: 2rem;
+}
+
+.split-container div {
+  max-width: 75ch;
 }
 
 .reverse-wrap {
   flex-wrap: wrap-reverse;
-}
-
-.split-container div {
-  width: 45vw;
-  min-width: 300px;
-  padding: 1rem;
 }
 
 .vr-section {
