@@ -2,7 +2,7 @@ const cardContainer = document.querySelector(".card-container");
 const newExhibitContainer = document.querySelector(".new-exhibit-container");
 
 async function getPosts() {
-  const url = "http://ocsm.x10.mx/wp/wp-json/wc/store/products";
+  const url = "https://osloscience.flywheelsites.com/wp-json/wc/store/products";
   try {
     const response = await fetch(url);
     const results = await response.json();

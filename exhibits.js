@@ -4,7 +4,7 @@ const id = params.get("id");
 const detailsContainer = document.querySelector(".details-container");
 const detailsSection = document.querySelector(".details");
 
-const url = `http://ocsm.x10.mx/wp/wp-json/wc/store/products/${id}`;
+const url = `https://osloscience.flywheelsites.com/wp-json/wc/store/products/${id}`;
 
 async function getDetails(details) {
   try {
