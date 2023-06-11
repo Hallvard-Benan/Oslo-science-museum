@@ -1,72 +1,48 @@
 # Oslo-science-museum
 
-# Your project title
+![image](https://github.com/Hallvard-Benan/Oslo-science-museum/blob/main/assets/Skjermbilde%202023-06-11%20kl.%2020.34.40.png)
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
-
-A simple overview of the use/purpose of the project.
+A website for a science museum
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This website was built for a school project. Our task was to design and build a website for a community science museum, targeted at young adults.
 
-You can add some bullet points if you'd like to:
+The site contains information about the different exhibits at the museum, as well as practical information about the museum itself. 
 
-- List item 1
-- List item 2
-- List item 3
+- List of exhibits
+- Details page about exhibits
+- Contact form with validation
+- Uses wordpress as a headless CMS to host content
 
 ## Built With
 
 You can list a the tech stack that you've used over here
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- Vanilla Javascript
+- HTML/CSS
 
 ## Getting Started
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
+git clone git@github.com:Hallvard-Benan/assignment-html-css
 ```
 
 ### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
+The project has no dependencies, and requires no special setup to run.
+Just open index.html in your browser.
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+You could contact me, my contact info can be found in the next section of the README.  Make a pull request and i will review it in the future.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
+Email:
+hallvard.dev@gmail.com
 
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+[My LinkedIn page](https://www.linkedin.com/in/hallvard-benan-282937249/)
